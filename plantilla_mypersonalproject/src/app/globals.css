@@ -1,0 +1,68 @@
+/* C:\Users\kenny\Desktop\Proyecto Front-End\plantilla_mypersonalproject\src\app\globals.css */
+
+/* Importa Tailwind (tu versión 4, etc.) */
+@import "tailwindcss";
+
+/* Estilos globales extra */
+
+/* 
+   Modo oscuro manual:
+   Cuando <body> tenga la clase "dark-mode", 
+   cambia fondo y texto de todo el sitio. 
+*/
+.dark-mode {
+  background-color: #000 !important; 
+  color: #fff !important;
+}
+
+/* 
+  Ejemplo de secciones con clase .hero-section (si la usaras).
+  .dark-mode .hero-section {
+    background-color: #111 !important;
+    color: #eee !important;
+  }
+
+  .dark-mode .about-section {
+    background-color: #111 !important;
+    color: #eee !important;
+  }
+  ... y así para cada sección, 
+  si prefieres este approach de CSS en vez de condicionales.
+*/
+
+/* Transición suave del color / background en todo el body */
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Animaciones para el botón de flecha */
+
+/* Animación para desaparecer (slide down y fade out) */
+@keyframes slide-down-fade {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+.animate-slide-down-fade {
+  animation: slide-down-fade 0.4s forwards;
+}
+
+/* Animación para aparecer (slide up y fade in) */
+@keyframes slide-up-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-slide-up-fade {
+  animation: slide-up-fade 0.4s forwards;
+}
