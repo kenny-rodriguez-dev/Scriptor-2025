@@ -5,8 +5,11 @@ import ThemeProvider from "./theme-provider";
 import FloatButtons from "./components/FloatButtons";
 
 export const metadata = {
-  title: "CopyGen Replica",
-  description: "Landing page inspired by CopyGen theme",
+  title: "Scriptor",
+  description: "Landing page",
+  icons: {
+    icon: "/scriptoricon.png",
+  },
 };
 
 export default function RootLayout({ children }) {

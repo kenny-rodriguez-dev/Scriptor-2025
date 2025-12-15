@@ -54,9 +54,8 @@ function MobileSubmenuLink({
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
       onTouchCancel={handleTouchEnd}
-      className={`active:text-purple-700 ${submenuLinkClass} transition-colors duration-300 ${
-        activeLink === href || isPressed ? "text-purple-700" : ""
-      }`}
+      className={`active:text-purple-700 ${submenuLinkClass} transition-colors duration-300 ${activeLink === href || isPressed ? "text-purple-700" : ""
+        }`}
     >
       {label}
     </Link>
@@ -121,9 +120,8 @@ function MobileMenuItem({
   return (
     <div className="relative w-full">
       <div
-        className={`font-medium group transition-colors flex items-center justify-between py-2 cursor-pointer active:text-purple-700 ${
-          isPressed ? "text-purple-700" : ""
-        }`}
+        className={`font-medium group transition-colors flex items-center justify-between py-2 cursor-pointer active:text-purple-700 ${isPressed ? "text-purple-700" : ""
+          }`}
         onClick={handleContainerClick}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
@@ -140,9 +138,8 @@ function MobileMenuItem({
 
       {items && items.length > 0 && (
         <div
-          className={`overflow-hidden transition-all duration-700 ease-in-out pl-4 ${
-            isOpen ? "max-h-60 opacity-100 mt-2" : "max-h-0 opacity-0"
-          }`}
+          className={`overflow-hidden transition-all duration-700 ease-in-out pl-4 ${isOpen ? "max-h-60 opacity-100 mt-2" : "max-h-0 opacity-0"
+            }`}
         >
           {items.map((subItem, i) => (
             <MobileSubmenuLink
@@ -227,19 +224,17 @@ export default function Header() {
     }, 300);
   };
 
-  const mainLinkClass = `font-medium text-sm md:text-base transition-colors duration-300 ${
-    darkMode
-      ? "text-white hover:text-purple-700"
-      : "text-black hover:text-purple-700"
-  }`;
+  const mainLinkClass = `font-medium text-sm md:text-base transition-colors duration-300 ${darkMode
+    ? "text-white hover:text-purple-700"
+    : "text-black hover:text-purple-700"
+    }`;
 
   const submenuLinkClass = `block py-2 px-3 text-left font-medium rounded-md transition-colors duration-300 hover:bg-purple-600/10 hover:text-purple-800 ${textColorClass}`;
 
   function getSubmenuClass(menuKey) {
     const isOpen = openDropdown === menuKey;
-    return `absolute left-1/2 top-[165%] transition-all duration-500 p-4 rounded-lg ${
-      isOpen ? "pointer-events-auto" : "pointer-events-none"
-    }`;
+    return `absolute left-1/2 top-[165%] transition-all duration-500 p-4 rounded-lg ${isOpen ? "pointer-events-auto" : "pointer-events-none"
+      }`;
   }
 
   function getSubmenuStyle(menuKey, minW = "220px") {
@@ -326,12 +321,12 @@ export default function Header() {
         <Link href="/" className="flex items-center cursor-pointer">
           {/* Sustituye /images/logo-placeholder.png por tu imagen cuando la subas */}
           <Image
-            src="/images/logo-placeholder.png"
+            src="/scriptor.png"
             alt="Logo del sitio"
             width={120}
             height={32}
             priority
-            className="object-contain h-8 w-auto"
+            className="object-contain h-16 w-auto"
           />
         </Link>
 
@@ -374,9 +369,8 @@ export default function Header() {
               <Link
                 href="/servicios"
                 onClick={() => setActiveLink("servicios")}
-                className={`${mainLinkClass} ${
-                  activeLink === "servicios" ? "text-purple-700" : ""
-                }`}
+                className={`${mainLinkClass} ${activeLink === "servicios" ? "text-purple-700" : ""
+                  }`}
               >
                 Servicios
               </Link>
@@ -400,9 +394,8 @@ export default function Header() {
           <Link
             href="/precios"
             onClick={() => setActiveLink("precios")}
-            className={`${mainLinkClass} ${
-              activeLink === "precios" ? "text-purple-700" : ""
-            }`}
+            className={`${mainLinkClass} ${activeLink === "precios" ? "text-purple-700" : ""
+              }`}
           >
             Precios
           </Link>
@@ -417,9 +410,8 @@ export default function Header() {
               <Link
                 href="/testimonios"
                 onClick={() => setActiveLink("testimonios")}
-                className={`${mainLinkClass} ${
-                  activeLink === "testimonios" ? "text-purple-700" : ""
-                }`}
+                className={`${mainLinkClass} ${activeLink === "testimonios" ? "text-purple-700" : ""
+                  }`}
               >
                 Testimonios y muestras
               </Link>
@@ -450,9 +442,8 @@ export default function Header() {
               onClick={() => setActiveLink("productos")}
             >
               <span
-                className={`${mainLinkClass} ${
-                  activeLink === "productos" ? "text-purple-700" : ""
-                }`}
+                className={`${mainLinkClass} ${activeLink === "productos" ? "text-purple-700" : ""
+                  }`}
               >
                 Productos
               </span>
@@ -483,9 +474,8 @@ export default function Header() {
               onClick={() => setActiveLink("recursos")}
             >
               <span
-                className={`${mainLinkClass} ${
-                  activeLink === "recursos" ? "text-purple-700" : ""
-                }`}
+                className={`${mainLinkClass} ${activeLink === "recursos" ? "text-purple-700" : ""
+                  }`}
               >
                 Recursos
               </span>
@@ -512,29 +502,26 @@ export default function Header() {
                 toggleTheme();
                 setActiveLink("theme");
               }}
-              className={`${mainLinkClass} group cursor-pointer ${
-                activeLink === "theme" ? "text-purple-700" : ""
-              }`}
+              className={`${mainLinkClass} group cursor-pointer ${activeLink === "theme" ? "text-purple-700" : ""
+                }`}
             >
               Versión{" "}
               <span
-                className={`inline-block bg-purple-600 px-2 py-0.5 rounded-full text-center w-20 transition-colors duration-300 ${
-                  darkMode
-                    ? "text-white group-hover:text-black"
-                    : "text-black group-hover:text-white"
-                }`}
+                className={`inline-block bg-purple-600 px-2 py-0.5 rounded-full text-center w-20 transition-colors duration-300 ${darkMode
+                  ? "text-white group-hover:text-black"
+                  : "text-black group-hover:text-white"
+                  }`}
               >
                 {darkMode ? "Oscura" : "Clara"}
               </span>
             </button>
             <a
-              href="tel:+593987671122"
+              href="tel:+593 98 717 3442"
               onClick={() => setActiveLink("phone")}
-              className={`${mainLinkClass} cursor-pointer ${
-                activeLink === "phone" ? "text-purple-700" : ""
-              }`}
+              className={`${mainLinkClass} cursor-pointer ${activeLink === "phone" ? "text-purple-700" : ""
+                }`}
             >
-              +593 98 767 1122
+              +593 98 717 3442
             </a>
           </div>
         </nav>
@@ -542,15 +529,13 @@ export default function Header() {
 
       {/* Menú móvil */}
       <div
-        className={`md:hidden ${headerBg} px-4 ${
-          mobileMenuOpen
-            ? darkMode
-              ? "border-t border-gray-700"
-              : "border-t border-gray-200"
-            : ""
-        } overflow-hidden transition-all duration-500 ease-in-out ${
-          mobileMenuOpen ? "max-h-[1000px] pt-4 pb-6" : "max-h-0"
-        }`}
+        className={`md:hidden ${headerBg} px-4 ${mobileMenuOpen
+          ? darkMode
+            ? "border-t border-gray-700"
+            : "border-t border-gray-200"
+          : ""
+          } overflow-hidden transition-all duration-500 ease-in-out ${mobileMenuOpen ? "max-h-[1000px] pt-4 pb-6" : "max-h-0"
+          }`}
       >
         <div className="flex flex-col space-y-2">
           {/* Servicios */}
@@ -640,11 +625,10 @@ export default function Header() {
             >
               Versión{" "}
               <span
-                className={`inline-block bg-purple-600 px-2 py-0.5 rounded-full transition-colors duration-300 ${
-                  darkMode
-                    ? "text-white group-hover:text-black"
-                    : "text-black group-hover:text-white"
-                }`}
+                className={`inline-block bg-purple-600 px-2 py-0.5 rounded-full transition-colors duration-300 ${darkMode
+                  ? "text-white group-hover:text-black"
+                  : "text-black group-hover:text-white"
+                  }`}
               >
                 {darkMode ? "Oscura" : "Clara"}
               </span>
@@ -654,7 +638,7 @@ export default function Header() {
               onClick={() => closeMobileMenu()}
               className="font-medium py-2 transition-colors active:text-purple-700 hover:text-purple-700"
             >
-              +593 98 767 1122
+              +593 98 717 3442
             </a>
           </div>
         </div>

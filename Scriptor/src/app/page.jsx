@@ -68,7 +68,7 @@ function Hero75Section() {
     >
       <div className="container mx-auto px-6 text-center relative z-10">
         <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-          Hola mundo
+          Bienvenido a Scriptor
         </h1>
         <h2 className="text-2xl md:text-3xl font-semibold mb-4">
           Servicios de redacción de currículums ATS que realmente funcionan.
@@ -416,7 +416,7 @@ function TestimonialCarousel({ testimonials }) { // This is the new TestimonialC
                 alt={test.name}
                 // MODIFICACIÓN: Tamaño de imagen estandarizado a w-16 h-16 (64px) y object-cover
                 className="w-16 h-16 rounded-full object-cover mb-2"
-                width={64} 
+                width={64}
                 height={64}
               />
               {/* Nombre y fecha */}
@@ -774,8 +774,8 @@ function CvSliderLeft({ sliderImages }) {
               setOffsetX(0);
             }}
             className={`cursor-pointer w-3 h-3 rounded-full mx-1 focus:outline-none ${currentIndex === i
-                ? "bg-purple-600" // MODIFICADO: Color del punto activo a morado
-                : "bg-gray-300 dark:bg-gray-700"
+              ? "bg-purple-600" // MODIFICADO: Color del punto activo a morado
+              : "bg-gray-300 dark:bg-gray-700"
               }`}
           />
         ))}
@@ -797,7 +797,7 @@ function ClientResultsCarousel({ results }) {
   const [isTransitioning, setIsTransitioning] = useState(false); // Para manejar el "salto" del bucle infinito
   const [isDragging, setIsDragging] = useState(false);
   const [startXvalue, setStartXValue] = useState(0); // Renombrado para evitar conflicto
-  
+
   // INICIO MODIFICACIÓN: Lógica para tarjetas por vista responsiva
   const [cardsPerView, setCardsPerView] = useState(3); // Por defecto 3, se ajustará
   // FIN MODIFICACIÓN
@@ -888,7 +888,7 @@ function ClientResultsCarousel({ results }) {
       setIsTransitioning(false); // En cualquier otro caso, la transición normal ha terminado
     }
   };
-  
+
   // Lógica de arrastre (Drag)
   const handleMouseDown = (e) => {
     if (e.button !== 0) return;
@@ -908,7 +908,7 @@ function ClientResultsCarousel({ results }) {
 
   const handleMouseUpOrLeave = () => { // Unificada para mouseup y mouseleave
     if (!isDragging) return;
-    
+
     // Lógica para determinar si cambiar de slide basado en el arrastre
     if (Math.abs(offsetX) > cardWidth / 4) { // Umbral para cambiar
       if (offsetX > 0) { // Arrastre hacia la derecha (ver anterior)
@@ -917,7 +917,7 @@ function ClientResultsCarousel({ results }) {
         handleNext();
       }
     }
-    
+
     setOffsetX(0); // Resetea el offset visual para el próximo frame
     setIsDragging(false);
     startAutoPlay();
@@ -941,7 +941,7 @@ function ClientResultsCarousel({ results }) {
 
   const handleTouchEnd = () => {
     if (!isDragging) return;
-     if (Math.abs(offsetX) > cardWidth / 4) {
+    if (Math.abs(offsetX) > cardWidth / 4) {
       if (offsetX > 0) {
         handlePrev();
       } else {
@@ -965,10 +965,10 @@ function ClientResultsCarousel({ results }) {
     transform: `translateX(${currentTranslateX + offsetX}px)`,
     transition: isDragging ? 'none' : (isTransitioning ? 'transform 300ms ease-out' : 'none'),
     // Width calculado para todos los items (originales + clones)
-    width: `${totalItems * totalCardWidthAndGap}px`, 
+    width: `${totalItems * totalCardWidthAndGap}px`,
     cursor: isDragging ? "grabbing" : "grab",
   };
-  
+
   const itemStyle = {
     width: cardWidth > 0 ? cardWidth : '100%', // Asegura que la tarjeta tenga ancho
     flexShrink: 0, // Evita que las tarjetas se encojan
@@ -1017,10 +1017,10 @@ function ClientResultsCarousel({ results }) {
                 src={item.avatar || "/images/avatars/default.png"} // Usar un placeholder local si es posible
                 alt={item.name}
                 // INICIO MODIFICACIÓN: Tamaño de imagen estandarizado a w-16 h-16 (64px)
-                width={64} 
+                width={64}
                 height={64}
                 className="rounded-full object-cover mb-2 w-16 h-16 flex-shrink-0" // flex-shrink-0 para evitar que se encoja
-                // FIN MODIFICACIÓN
+              // FIN MODIFICACIÓN
               />
               {/* Contenido de Texto */}
               <div className="flex flex-col justify-center">

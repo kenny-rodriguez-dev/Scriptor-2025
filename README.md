@@ -1,86 +1,65 @@
-# CopyGen Replica - Prototipo de Landing Page de Servicios Profesionales
+# Scriptor - Plantilla de Landing Page Moderna
 
-Este es un proyecto de Front-End moderno construido con **Next.js 15 (App Router)**, **React 19** y **Tailwind CSS 4**. La aplicación es una réplica de una landing page de servicios profesionales (enfocada en redacción de currículums y optimización de perfiles), diseñada para demostrar habilidades avanzadas en maquetación, manejo de estado y diseño responsivo.
+Este es un proyecto Front-End de alto rendimiento, construido con **Next.js**, **React** y **Tailwind CSS**. Sirve como una plantilla robusta y modular para la creación de landing pages, sitios web corporativos y portafolios modernos. Está optimizado para la velocidad y la experiencia de usuario.
 
 ### Estado del Proyecto
 
-Este proyecto es un prototipo funcional diseñado para portafolio. Representa la interfaz de usuario completa y la navegación de un sitio comercial, con énfasis en la experiencia de usuario (UX) y la adaptabilidad visual.
+Este proyecto está **completo** y funcional. Está diseñado para demostrar mis habilidades técnicas en el desarrollo Front-End y mi dominio de las tecnologías más demandadas del ecosistema React/Next.js.
 
-### Características Principales
+### Características
 
-* **Arquitectura Moderna:** Uso de Next.js App Router para una navegación optimizada y SEO friendly.
-* **Sistema de Temas (Dark/Light Mode):** Implementación de un `ThemeProvider` personalizado que permite alternar entre modo claro y oscuro, con persistencia de estilos en todos los componentes.
-* **Diseño Responsivo y Adaptativo:** Interfaz totalmente optimizada para dispositivos móviles, tablets y escritorio, incluyendo un menú de navegación móvil (Hamburger menu) con animaciones fluidas.
-* **Componentes Interactivos:**
-    * Carruseles de testimonios con desplazamiento automático y manual.
-    * Secciones de preguntas frecuentes (FAQ) con acordeones animados.
-    * Tablas de precios con interruptores de contenido.
-    * Botones flotantes de acción rápida (WhatsApp y "Volver arriba").
-* **Estilizado Avanzado:** Uso de la última versión de **Tailwind CSS (v4)** para estilos utilitarios y **Material UI (MUI)** para iconos vectoriales.
-* **Animaciones:** Implementación de contadores dinámicos (`CountUp`) y transiciones suaves entre secciones.
+* **Diseño Modular y Componentizado:** Estructura clara y reusable de componentes (ej. `About`, `Features`, `Faq`, `CallToAction`).
+* **Navegación Avanzada:** Implementación de un componente `Header` que gestiona tanto la navegación de escritorio como un menú móvil (`Header.jsx`).
+* **Dark Mode Integrado:** Funcionalidad para cambiar el tema visual de la aplicación.
+* **Utilidades Flotantes:** Componente `FloatButtons` que incluye un botón de contacto directo por WhatsApp y un botón de "Volver Arriba" con indicador de progreso de scroll dinámico (`FloatButtons.jsx`).
+* **Componentes Interactivos:** Implementación de un acordeón (`Faq.jsx`) para mostrar y ocultar información de forma eficiente.
+* **Optimización de Imagen y Rendimiento:** Uso de componentes nativos de Next.js (`Image`) para asegurar una carga rápida.
+* **Diseño Responsivo:** Interfaz de usuario adaptativa para ofrecer una experiencia perfecta en cualquier dispositivo.
 
 ---
 
 ### Tecnologías Utilizadas
 
-#### Core
-* **Next.js 15.2:** Framework de React para producción.
-* **React 19:** Biblioteca para construir interfaces de usuario.
-* **JavaScript (ES6+):** Lógica del lado del cliente.
+#### Front-End
 
-#### Estilos y Diseño
-* **Tailwind CSS 4.0:** Framework de utilidades CSS para un diseño rápido y mantenible.
-* **Material UI (MUI Icons):** Iconografía profesional.
-* **CSS Modules:** Para estilos específicos y animaciones personalizadas.
-
-#### Herramientas
-* **ESLint:** Para asegurar la calidad y consistencia del código.
-* **PostCSS:** Procesamiento de CSS.
+* **Next.js y React:** Framework principal para la construcción de la interfaz de usuario.
+* **Tailwind CSS:** Para el diseño Utility-First, permitiendo un desarrollo rápido y un alto nivel de personalización.
 
 ---
 
 ### Requisitos Previos
 
-Para ejecutar el proyecto localmente, necesitará tener instalado:
+Para ejecutar el proyecto, necesitará tener instalado:
 
-* Node.js (versión 18.x o superior recomendada para Next.js 15)
-* npm o yarn como gestor de paquetes.
+* Node.js (versión 16.x o superior)
 
 ---
 
 ### Configuración del Proyecto
 
-Siga estos pasos para desplegar el proyecto en su entorno local:
+#### 1. Clonar el Repositorio
 
-1.  **Clonar el repositorio:**
-    Debe abrir su terminal y clonar este proyecto (o descargar el ZIP):
-    ```bash
-    git clone <URL_DE_TU_REPOSITORIO>
-    ```
+```bash
+git clone [URL_DE_SU_REPOSITORIO]
+cd [NOMBRE_DEL_PROYECTO]
+```
 
-2.  **Instalar dependencias:**
-    Navegue hacia la carpeta del proyecto e instale los paquetes necesarios:
+#### 2. Configuración del Entorno
+
+1.  Asegúrese de tener todas las variables de entorno necesarias si las usa (generalmente en un archivo `.env.local` para Next.js).
+2.  Instale las dependencias de Node.js:
+
     ```bash
-    cd plantilla_mypersonalproject
     npm install
     ```
 
-3.  **Ejecute el servidor de desarrollo:**
-    Inicie el proyecto en modo local:
+3.  Ejecute el proyecto en modo de desarrollo:
+
     ```bash
     npm run dev
     ```
 
-4.  **Ver el proyecto:**
-    Debe abrir su navegador y acceder a `http://localhost:3000`.
-
----
-
-### Estructura de Carpetas
-
-* `/src/app`: Contiene las rutas, el layout principal y las páginas (Home, Servicios, Precios, etc.).
-* `/src/app/components`: Componentes reutilizables (Header, Footer, Sliders, Acordeones).
-* `/public`: Activos estáticos como imágenes e iconos.
+El Front-End estará accesible en `http://localhost:3000`.
 
 ---
 
@@ -88,5 +67,4 @@ Siga estos pasos para desplegar el proyecto en su entorno local:
 
 * **Kenny Rodríguez**
 * [Perfil de LinkedIn](https://www.linkedin.com/in/kennyrodriguezm/)
-
----
+* [Otras Redes/Portafolio]

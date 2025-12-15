@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="inline-block mb-4 cursor-pointer" aria-label="Homepage">
               <Image
-                src="/images/logo-placeholder.png"
+                src="/scriptor.png"
                 alt="Logo del sitio"
                 width={120}
                 height={32}
@@ -36,11 +36,11 @@ export default function Footer() {
                 className="object-contain h-8 w-auto"
               />
             </Link>
-            <p className={`${baseTextStyle} leading-relaxed mb-4`}>
-              Texto de ejemplo 1.<br/>
-              Texto de ejemplo 2.<br/>
+            { /* <p className={`${baseTextStyle} leading-relaxed mb-4`}>
+              Texto de ejemplo 1.<br />
+              Texto de ejemplo 2.<br />
               Texto de ejemplo 3.
-            </p>
+            </p> */}
           </div>
 
           {/* Col 2: Servicios */}
@@ -58,17 +58,17 @@ export default function Footer() {
 
           {/* Col 3: Precios y Testimonios */}
           <div>
-             {/* Título "Precios" */}
-             <Link href="#" className={`block mb-2 transition-colors duration-300 ${hoverClass}`}>
-                <h3 className={`font-bold ${baseTextStyle}`}>Precios</h3>
-             </Link>
-             <ul className={`space-y-1 ${baseTextStyle} mb-4`}>
-                {/* Links de precios aquí si existen */}
-             </ul>
-
-             {/* Título Testimonios y muestras */}
+            {/* Título "Precios" */}
             <Link href="#" className={`block mb-2 transition-colors duration-300 ${hoverClass}`}>
-             <h3 className={`font-bold ${baseTextStyle}`}>Testimonios y muestras</h3>
+              <h3 className={`font-bold ${baseTextStyle}`}>Precios</h3>
+            </Link>
+            <ul className={`space-y-1 ${baseTextStyle} mb-4`}>
+              {/* Links de precios aquí si existen */}
+            </ul>
+
+            {/* Título Testimonios y muestras */}
+            <Link href="#" className={`block mb-2 transition-colors duration-300 ${hoverClass}`}>
+              <h3 className={`font-bold ${baseTextStyle}`}>Testimonios y muestras</h3>
             </Link>
             <ul className={`space-y-1 ${baseTextStyle}`}>
               <li><Link href="/testimonios/ejemplos-curriculum" className={`transition-colors duration-300 ${hoverClass}`}>Ejemplos de redacción de currículum</Link></li>
@@ -80,50 +80,50 @@ export default function Footer() {
           {/* Col 4: Productos */}
           <div>
             <Link href="#" className={`block mb-2 transition-colors duration-300 ${hoverClass}`}>
-               <h3 className={`font-bold ${baseTextStyle}`}>Productos</h3>
+              <h3 className={`font-bold ${baseTextStyle}`}>Productos</h3>
             </Link>
-             <ul className={`space-y-1 ${baseTextStyle}`}>
-               <li><Link href="/productos/plantillas-curriculum" className={`transition-colors duration-300 ${hoverClass}`}>Plantillas de currículum</Link></li>
-               <li><Link href="/productos/kit-linkedin" className={`transition-colors duration-300 ${hoverClass}`}>Kit de herramientas de LinkedIn</Link></li>
-             </ul>
-           </div>
+            <ul className={`space-y-1 ${baseTextStyle}`}>
+              <li><Link href="/productos/plantillas-curriculum" className={`transition-colors duration-300 ${hoverClass}`}>Plantillas de currículum</Link></li>
+              <li><Link href="/productos/kit-linkedin" className={`transition-colors duration-300 ${hoverClass}`}>Kit de herramientas de LinkedIn</Link></li>
+            </ul>
+          </div>
 
           {/* Col 5: Recursos */}
           <div>
             <Link href="#" className={`block mb-2 transition-colors duration-300 ${hoverClass}`}>
-                <h3 className={`font-bold ${baseTextStyle}`}>Recursos</h3>
+              <h3 className={`font-bold ${baseTextStyle}`}>Recursos</h3>
             </Link>
             <ul className={`space-y-1 ${baseTextStyle}`}>
               <li><Link href="/recursos/blog" className={`transition-colors duration-300 ${hoverClass}`}>Blog</Link></li>
               <li><Link href="/recursos/faq" className={`transition-colors duration-300 ${hoverClass}`}>Preguntas frecuentes (FAQ)</Link></li>
               <li><Link href="/recursos/busqueda-empleo" className={`transition-colors duration-300 ${hoverClass}`}>Recursos para quienes buscan empleo</Link></li>
             </ul>
-           </div>
+          </div>
         </div>
 
         {/* Bottom Row: Copyright and Social Icons */}
         <div className="pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
-           <div className={`flex items-center mb-4 md:mb-0 ${baseTextStyle}`}>
-             <Copyright style={{ fontSize: '1rem' }} className="mr-1"/>
-              <span>{new Date().getFullYear()} NombreDeEmpresa. Todos los derechos reservados.</span>
-           </div>
-           <div className="flex space-x-4">
+          <div className={`flex items-center mb-4 md:mb-0 ${baseTextStyle}`}>
+            <Copyright style={{ fontSize: '1rem' }} className="mr-1" />
+            <span>{new Date().getFullYear()} Scriptor. Todos los derechos reservados.</span>
+          </div>
+          <div className="flex space-x-4">
             <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <Facebook style={{ ...iconStyle, color: "#1877F2" }} />
+              <Facebook style={{ ...iconStyle, color: "#1877F2" }} />
             </Link>
             <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)">
-                  <XIcon style={{ ...iconStyle, color: darkMode ? "#FFFFFF" : "#000000" }} />
+              <XIcon style={{ ...iconStyle, color: darkMode ? "#FFFFFF" : "#000000" }} />
             </Link>
             <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <LinkedIn style={{ ...iconStyle, color: "#0A66C2" }} />
-             </Link>
-             <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                 <WhatsApp style={{ ...iconStyle, color: "#25D366" }} />
-             </Link>
-            <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <Instagram style={{ ...iconStyle, color: "#E4405F" }} />
+              <LinkedIn style={{ ...iconStyle, color: "#0A66C2" }} />
             </Link>
-           </div>
+            <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <WhatsApp style={{ ...iconStyle, color: "#25D366" }} />
+            </Link>
+            <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <Instagram style={{ ...iconStyle, color: "#E4405F" }} />
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
