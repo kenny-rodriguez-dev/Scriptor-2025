@@ -67,4 +67,5 @@ El Front-End estará accesible en `http://localhost:3000`.
 
 * **Kenny Rodríguez**
 * [Perfil de LinkedIn](https://www.linkedin.com/in/kennyrodriguezm/)
-* [Otras Redes/Portafolio]
+
+---
